@@ -43,3 +43,19 @@ func owo(a, b, c int, hui func(a, b int) int) func() bool {
 	return divider
 }
 */
+/* 1
+func main() {
+	a, b, c := 2, 5, 7
+	mat := func(a, b int) int {
+		return a + b
+	}
+	xd := calculate(a, b, c, mat)
+	fmt.Println(xd())
+}
+func calculate(a, b, c int, mats func(a, b int) int) func() bool {
+	divider := func() bool {
+		return mats(a, b)%c == 0
+	}
+	return divider
+}
+*/
